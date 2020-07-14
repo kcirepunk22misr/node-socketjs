@@ -13,6 +13,7 @@ server.app.use(express_1.urlencoded({ extended: true }));
 server.app.use(express_1.json());
 // CORS
 server.app.use(cors_1.default({ origin: true, credentials: true, }));
+// routes
 server.app.use('/', router_1.default);
 server.start(function () {
     console.log('Server On Port 3000');

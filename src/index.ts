@@ -12,6 +12,7 @@ server.app.use(json());
 // CORS
 server.app.use(cors({ origin: true, credentials: true, }));
 
+// routes
 server.app.use('/', router);
 
 
