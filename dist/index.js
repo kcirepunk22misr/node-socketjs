@@ -7,7 +7,7 @@ var express_1 = require("express");
 var server_1 = require("./classes/server");
 var cors_1 = __importDefault(require("cors"));
 var router_1 = __importDefault(require("./routes/router"));
-var server = new server_1.Server();
+var server = server_1.Server.instance;
 // middlewares
 server.app.use(express_1.urlencoded({ extended: true }));
 server.app.use(express_1.json());

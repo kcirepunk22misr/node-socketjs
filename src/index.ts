@@ -3,7 +3,7 @@ import { Server } from './classes/server';
 import cors from 'cors';
 import router from './routes/router';
 
-const server = new Server();
+const server = Server.instance;
 
 // middlewares
 server.app.use(urlencoded({ extended: true }));
